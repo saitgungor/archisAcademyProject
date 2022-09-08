@@ -87,6 +87,20 @@
   height: 196px;
 }
 
+.content button {
+  cursor: pointer;
+  height: 48px;
+  width: 154px;
+  border: 6px;
+  background: #8c30f5;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-top: 32px;
+}
+
 .phone-mockup {
   width: 350px;
   height: 640px;
@@ -127,4 +141,5 @@
 
 .logos-section li {
   list-style: none;
+  cursor: pointer;
 }
