@@ -239,3 +239,23 @@
   height: 148px;
   margin-top: 64px;
 }
+
+.testimonial {
+  width: 100vw;
+  height: 896px;
+  background-color: #d5fafc;
+}
+
+.double-quotes {
+  width: 143px;
+  height: 120px;
+  /* position: absolute; */
+  margin-left: 165px;
+  margin-top: 64px;
+}
+
+.double-quotes img {
+  opacity: 0.3;
+  margin-top: 64px;
+  position: absolute;
+}
