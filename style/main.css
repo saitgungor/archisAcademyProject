@@ -4,9 +4,16 @@
   box-sizing: border-box;
 }
 
-.app {
+.hero {
   height: 100vh;
   width: 100vw;
+  background-image: url(/assets/background.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.app-logo {
+  height: 28px;
 }
 
 .nav {
@@ -41,7 +48,7 @@
 }
 
 .store-images {
-  height: 30px;
+  height: 40px;
 }
 
 .chevron-down {
@@ -57,4 +64,67 @@
 .chevron-down img {
   height: 6px;
   width: 10.5px;
+}
+
+.content {
+  width: 730px;
+  height: 276px;
+  margin-left: 165px;
+  margin-top: 168px;
+  float: left;
+  margin-right: 30px;
+}
+
+.content h1 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 98px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #18191f;
+  width: 730px;
+  height: 196px;
+}
+
+.phone-mockup {
+  width: 350px;
+  height: 640px;
+  /* background-color: red; */
+  margin-top: 96px;
+  float: left;
+  display: flex;
+  justify-content: center;
+}
+
+.phone-mockup img {
+  width: 320px;
+  height: 100%;
+  filter: drop-shadow(10px 15px 30px rgba(41, 41, 42, 0.5));
+}
+
+.logo-coluds {
+  height: 142px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logos-section {
+  height: 60px;
+  width: 1110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logos-section ul {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+
+.logos-section li {
+  list-style: none;
 }
