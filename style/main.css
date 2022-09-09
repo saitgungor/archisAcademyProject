@@ -104,7 +104,6 @@
 .phone-mockup {
   width: 350px;
   height: 640px;
-  /* background-color: red; */
   margin-top: 96px;
   float: left;
   display: flex;
@@ -244,6 +243,7 @@
   width: 100vw;
   height: 896px;
   background-color: #d5fafc;
+  position: relative;
 }
 
 .double-quotes {
@@ -258,4 +258,156 @@
   opacity: 0.3;
   margin-top: 64px;
   position: absolute;
+}
+
+.section-heading {
+  height: 168px;
+  width: 445px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  margin-left: 260px;
+}
+
+.section-heading h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 64px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.section-heading p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+}
+
+.testimonial-1 {
+  height: 340px;
+  width: 445px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px;
+  gap: 32px;
+  box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+  border-radius: 8px;
+  position: absolute;
+  top: 168px;
+  left: 735px;
+}
+
+.testimonial-1 .logo {
+  height: 40px;
+  width: 130px;
+}
+
+.testimonial-1 .testimonial-content {
+  height: 204px;
+  width: 381px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.quotemark {
+  opacity: 0.3;
+}
+
+.feedback-person .feedback {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+}
+
+.person-details {
+  margin-top: 24px;
+}
+
+.person-details .person-name {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.person-details .person-position {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #969bab;
+}
+
+.testimonial-2 {
+  width: 350px;
+  height: 276px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px;
+  gap: 32px;
+  box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+  border-radius: 8px;
+  position: absolute;
+  top: 540px;
+  left: 735px;
+}
+
+.testimonial-2 .testimonial-content {
+  height: 140px;
+  width: 286px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.testimonial-1 .logo {
+  height: 40px;
+  width: 134px;
+}
+
+.testimonial-3 {
+  width: 350px;
+  height: 468px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px;
+  gap: 32px;
+  box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+  border-radius: 8px;
+  position: absolute;
+  top: 312px;
+  left: 355px;
+}
+
+.testimonial-3 .testimonial-content {
+  height: 332px;
+  width: 286px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.testimonial-1 .logo {
+  height: 40px;
+  width: 140px;
 }
