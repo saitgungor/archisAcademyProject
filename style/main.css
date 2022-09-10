@@ -1170,4 +1170,11 @@
   .footer-right img {
     height: 32px;
   }
+
+  .features-list {
+    width: 888px;
+    height: 288px;
+    margin-top: 38px;
+    gap: 51px;
+  }
 }
