@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 .hero {
@@ -10,6 +11,16 @@
   background-image: url(/assets/hero-images/background.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-image-wrapper {
+  height: 736px;
+  width: 1110px;
+  display: flex;
+  position: relative;
 }
 
 .app-logo {
@@ -17,13 +28,24 @@
 }
 
 .nav {
+  width: 100vw;
   height: 72px;
   display: flex;
   align-items: center;
-  padding: 0 20px;
+  justify-content: center;
+}
+
+.nav-wrapper {
+  width: 1110px;
+  height: 72px;
+  display: flex;
   justify-content: space-between;
-  max-width: 1100px;
-  margin: auto;
+  align-items: center;
+}
+
+.nav-left {
+  width: 567px;
+  height: 28px;
 }
 
 .nav-list {
@@ -34,20 +56,19 @@
 
 .list-item {
   list-style: none;
-  font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
   cursor: pointer;
 }
 
-.nav-list-right {
-  display: flex;
+.nav-right {
   gap: 12px;
+  display: flex;
   align-items: center;
 }
 
-.store-images {
+.nav-right img {
   height: 40px;
 }
 
@@ -56,8 +77,8 @@
   height: 18px;
   margin-left: 4px;
   display: flex;
-  float: right;
   align-items: center;
+  float: right;
   justify-content: center;
 }
 
@@ -69,14 +90,10 @@
 .hero .content {
   width: 730px;
   height: 276px;
-  margin-left: 165px;
   margin-top: 168px;
-  float: left;
-  margin-right: 30px;
 }
 
 .hero .content h1 {
-  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 72px;
@@ -94,7 +111,6 @@
   border: 6px;
   background: #8c30f5;
   color: white;
-  font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
@@ -120,16 +136,16 @@
   height: 142px;
   width: 100vw;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .logos-section {
   height: 60px;
   width: 1110px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .logos-section ul {
@@ -147,8 +163,8 @@
   height: 672px;
   width: 100vw;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 }
 
 .features .heading {
@@ -161,7 +177,6 @@
 }
 
 .features .heading h2 {
-  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 48px;
@@ -171,7 +186,6 @@
 }
 
 .features .heading p {
-  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -187,12 +201,10 @@
   flex-direction: column;
   align-items: center;
   margin-top: 48px;
+  gap: 64px;
 }
 
-.features .row-1 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.features .row {
   gap: 30px;
   width: 1110px;
   height: 148px;
@@ -202,8 +214,8 @@
   height: 148 px;
   width: 350px;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 }
 
 .feature-icons img {
@@ -213,7 +225,6 @@
 }
 
 .features-list h5 {
-  font-family: "Inter", sans-serif;
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
@@ -222,64 +233,68 @@
 }
 
 .features-list p {
-  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
   text-align: center;
 }
 
-.features .row-2 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 30px;
-  width: 1110px;
-  height: 148px;
-  margin-top: 64px;
-}
-
 .testimonial {
   width: 100vw;
   height: 896px;
   background-color: #d5fafc;
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-wrapper {
+  height: 696px;
+  width: 920px;
+  margin-top: 120px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
   position: relative;
 }
 
+.testimonial-left {
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.testimonial-right {
+  gap: 32px;
+  display: flex;
+  flex-direction: column;
+}
 .double-quotes {
   width: 143px;
   height: 120px;
-  margin-left: 165px;
-  margin-top: 64px;
+  position: absolute;
+  left: -95px;
+  top: -56px;
 }
 
 .double-quotes img {
   opacity: 0.3;
-  margin-top: 64px;
-  position: absolute;
 }
 
 .testimonial .section-heading {
   height: 168px;
   width: 445px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   gap: 8px;
-  margin-left: 260px;
 }
 
 .section-heading h2 {
-  font-family: "Inter", sans-serif;
   font-size: 48px;
   font-weight: 800;
   line-height: 64px;
-  letter-spacing: 0em;
   text-align: left;
 }
 
 .section-heading p {
-  font-family: "Inter", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 32px;
@@ -287,19 +302,14 @@
 }
 
 .testimonial-1 {
+  margin-top: 48px;
   height: 340px;
   width: 445px;
   background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   padding: 32px;
   gap: 32px;
   box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
   border-radius: 8px;
-  position: absolute;
-  top: 168px;
-  left: 735px;
 }
 
 .testimonial-1 .logo {
@@ -310,9 +320,6 @@
 .testimonial-1 .testimonial-content {
   height: 204px;
   width: 381px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
   gap: 16px;
 }
 
@@ -321,7 +328,6 @@
 }
 
 .feedback-person .feedback {
-  font-family: "Inter", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 32px;
@@ -333,20 +339,16 @@
 }
 
 .person-details .person-name {
-  font-family: "Inter", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 28px;
-  letter-spacing: 0em;
   text-align: left;
 }
 
 .person-details .person-position {
-  font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 24px;
-  letter-spacing: 0em;
   text-align: left;
   color: #969bab;
 }
@@ -355,24 +357,15 @@
   width: 350px;
   height: 276px;
   background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   padding: 32px;
   gap: 32px;
   box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
   border-radius: 8px;
-  position: absolute;
-  top: 540px;
-  left: 735px;
 }
 
 .testimonial-2 .testimonial-content {
   height: 140px;
   width: 286px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
   gap: 16px;
 }
 
@@ -385,24 +378,15 @@
   width: 350px;
   height: 468px;
   background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   padding: 32px;
   gap: 32px;
   box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
   border-radius: 8px;
-  position: absolute;
-  top: 312px;
-  left: 355px;
 }
 
 .testimonial-3 .testimonial-content {
   height: 332px;
   width: 286px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
   gap: 16px;
 }
 
@@ -415,19 +399,22 @@
   width: 100vw;
   height: 332px;
   background-color: #ffffff;
-  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.stats-wrapper {
+  height: 172px;
+  width: 1110px;
+  gap: 30px;
+  display: flex;
 }
 
 .stats .section-heading {
   width: 540px;
   height: 168px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   gap: 8px;
-  margin-top: 82px;
-  margin-left: 165px;
-  position: absolute;
 }
 
 .stats .section-title {
@@ -436,14 +423,12 @@
 }
 
 .stats .section-title h2 {
-  font-family: "Inter", sans-serif;
   font-weight: 800;
   font-size: 48px;
   line-height: 64px;
 }
 
 .stats .section-heading p {
-  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
@@ -452,28 +437,16 @@
 .stats .counts {
   width: 540px;
   height: 172px;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   gap: 40px;
-  top: 80px;
-  left: 735px;
 }
 
 .counts .row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   gap: 30px;
   width: 540px;
   height: 66px;
 }
 
 .counts .stat {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
   gap: 16px;
   width: 255px;
   height: 66px;
@@ -482,24 +455,16 @@
 .counts .details {
   width: 191px;
   height: 66px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 .counts .details h4 {
-  font-family: "Inter", sans-serif;
   font-size: 28px;
   font-weight: 700;
   line-height: 40px;
-  letter-spacing: 0em;
   text-align: left;
 }
 
 .counts .icons {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   height: 48px;
   width: 48px;
   left: 0px;
@@ -509,14 +474,19 @@
 }
 
 .feature-single-5 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 64px 165px;
-  gap: 30px;
   width: 100vw;
   height: 668px;
-  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.single-6-wrapper {
+  height: 566px;
+  width: 1110px;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .feature-single-5 .image {
@@ -525,9 +495,6 @@
 }
 
 .feature-single-5 .content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   padding: 0px 48px;
   gap: 32px;
   width: 540px;
@@ -535,7 +502,6 @@
 }
 
 .feature-single-5 .content h3 {
-  font-family: "Inter", sans-serif;
   width: 444px;
   height: 54px;
   font-weight: 800;
@@ -544,7 +510,6 @@
 }
 
 .feature-single-5 .content p {
-  font-family: "Inter", sans-serif;
   width: 444px;
   height: 168px;
   font-weight: 400;
@@ -555,14 +520,9 @@
 .feature-single-5 button {
   width: 121px;
   height: 24px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
   gap: 8px;
   background: none;
   border: none;
-  font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -576,19 +536,22 @@
 }
 
 .feature-single-6 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 64px 165px;
-  gap: 48px;
   width: 100vw;
   height: 704px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.single-6-wrapper {
+  height: 566px;
+  width: 1110px;
+  gap: 48px;
+  display: flex;
+  flex-direction: column;
 }
 
 .feature-single-6 .feature-details {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   gap: 30px;
   width: 1110px;
   height: 128px;
@@ -602,22 +565,18 @@
 }
 
 .feature-single-6 h3 {
-  font-family: "Inter", sans-serif;
   font-size: 40px;
   font-weight: 800;
   line-height: 54px;
-  letter-spacing: 0em;
   text-align: left;
   width: 540px;
   height: 108px;
 }
 
 .feature-single-6 p {
-  font-family: "Inter", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 32px;
-  letter-spacing: 0em;
   text-align: left;
   width: 540px;
   height: 128px;
@@ -627,56 +586,55 @@
   width: 100vw;
   height: 491px;
   background: #2ec5ce;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.cta-wrapper {
+  height: 491px;
+  width: 1110px;
+  display: flex;
   position: relative;
 }
 
 .cta .phone-mockup-1 {
-  position: absolute;
   width: 232px;
   height: 464px;
-  left: 779px;
   filter: drop-shadow(10px 15px 30px rgba(41, 41, 42, 0.5));
+  margin-left: 74px;
 }
 
 .cta .phone-mockup-2 {
-  position: absolute;
   width: 232px;
-  height: 464px;
-  left: 1043px;
-  top: 73px;
+  height: 403px;
   filter: drop-shadow(10px 15px 30px rgba(41, 41, 42, 0.5));
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-left: 32px;
 }
 
 .cta .content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
   gap: 48px;
-  position: absolute;
   width: 540px;
   height: 356px;
-  left: 165px;
-  top: calc(50% - 356px / 2 + 0.5px);
+  margin-top: 68px;
 }
 
 .cta h2 {
-  font-family: "Inter", sans-serif;
   font-size: 48px;
   font-weight: 800;
   line-height: 64px;
-  letter-spacing: 0em;
   text-align: left;
   width: 540px;
   height: 128px;
 }
 
 .cta .message p {
-  font-family: "Inter", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 32px;
-  letter-spacing: 0em;
   text-align: left;
   width: 540px;
   height: 96px;
@@ -684,21 +642,15 @@
 }
 
 .cta .get-the-app {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
   gap: 8px;
   width: 282px;
   height: 76px;
 }
 
 .cta .get-the-app p {
-  font-family: "Inter", sans-serif;
   font-size: 18px;
   font-weight: 500;
   line-height: 28px;
-  letter-spacing: 0em;
   text-align: left;
 }
 
@@ -708,10 +660,6 @@
 }
 
 .cta .get-the-app .badges {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
   gap: 12px;
   width: 282px;
   height: 40px;
@@ -722,58 +670,43 @@
   height: 280px;
   background: #0b0d17;
   color: #ffffff;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-wrapper {
+  height: 168px;
+  width: 1110px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-left {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
   gap: 24px;
-  position: absolute;
   width: 489px;
   height: 168px;
-  left: 165px;
-  top: 56px;
 }
 
 .footer-right {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
   gap: 16px;
-  position: absolute;
   width: 160px;
   height: 140px;
-  left: 1115px;
-  top: 56px;
 }
 
 .footer-left .links {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
   gap: 12px;
   width: 489px;
   height: 64px;
 }
 
 .footer-left .links .row-1 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   gap: 24px;
   width: 199px;
   height: 26px;
 }
 
 .footer-left .links .row-2 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   gap: 24px;
   width: 489px;
   height: 26px;
@@ -787,7 +720,6 @@
 
 .footer li {
   list-style: none;
-  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
@@ -795,22 +727,36 @@
 }
 
 .footer-left p {
-  font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
   text-align: left;
   color: #d9dbe1;
 }
 
 .footer-right p {
-  font-family: "Inter", sans-serif;
   font-size: 18px;
   font-weight: 500;
   line-height: 28px;
-  letter-spacing: 0em;
   text-align: left;
   width: 160px;
   height: 28px;
+}
+
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex-column-flex-start {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.flex-row-flex-start {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
 }
